@@ -1,0 +1,14 @@
+{
+  "Amod/mental_health_counseling_conversations": {
+    "rows": 3512,
+    "last_fetched": "2025-06-05 14:18:30"
+  },
+  "solomonk/reddit_mental_health_posts": {
+    "rows": 151288,
+    "last_fetched": "2025-06-05 14:18:56"
+  },
+  "heliosbrahma/mental_health_chatbot_dataset": {
+    "rows": 172,
+    "last_fetched": "2025-06-05 14:19:03"
+  }
+}
