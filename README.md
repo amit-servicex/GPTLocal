@@ -36,4 +36,69 @@ A fully offline, private, and intelligent chatbot powered by:
 
 ---
 
+2. Install Dependencies
+
+pip install -r requirements.txt
+
+3. Install & Start Ollama
+
+curl -fsSL https://ollama.com/install.sh | sh
+ollama run mistral
+
+4. Run ChromaDB Server
+
+chroma run --path chroma_db/
+
+🧠 Index Your Data
+
+Run the indexing script to embed your documents:
+
+python rag_preprocess_and_index.py
+
+    Customize this script to embed Reddit, PDFs, or any text files.
+
+💬 Start the Chatbot
+
+python app.py
+
+    This will launch the Gradio chat UI in your browser.
+
+📁 Project Structure
+
+├── app.py                  # Gradio frontend & chatbot logic
+├── rag_query_local_mistral.py # Main RAG logic (retrieval + Mistral)
+├── rag_preprocess_and_index.py # Embed and store docs in ChromaDB
+├── chroma_db/              # Local vector database files
+├── data/                   # Your source content (JSON, etc.)
+├── requirements.txt
+└── README.md
+
+🎯 Future Ideas
+
+    Add memory to continue multi-turn conversations
+
+    Plug in tools (calculator, search) with LangChain
+
+    Create domain-specific AI assistants
+
+📜 License
+
+MIT — free to use, modify, and share.
+🧠 Inspired by
+
+    Ollama
+
+    Chroma
+
+    Gradio
+
+    The open-source AI community 🙌
+
+🙋 Need Help?
+
+Open an issue or ping me on dev.ios.amit@gmail.com.
+
+    
+
+
 
